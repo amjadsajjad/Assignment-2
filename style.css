@@ -1,0 +1,160 @@
+/* shared css */
+
+* {
+    font-family: 'Work Sans';
+}
+
+body {
+    width: 1920px;
+    ;
+    background-color: #FFF;
+    ;
+}
+
+/* header style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 250px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #3C354F;
+}
+
+nav li {
+    list-style: none;
+    color: ;
+    margin-right: 30px;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+#background {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    color: red;
+}
+
+.nav-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.gamer {
+    color: var(--primary-color);
+
+}
+
+/* banner style */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 250px;
+
+}
+
+.banner-sub-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 0px;
+}
+
+.banner-title {
+    font-size: 6.0rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 25%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 105px;
+
+}
+
+.banner-des {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.pri-btn {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    border: none;
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+.sec-btn {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    border: none;
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* responsive style */
+@media screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px 50px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 10px 50px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .banner-img-container{
+        max-width: 300px;
+    }
+    .banner-img img{
+        width: 100%
+    }
+    nav li{
+        margin
+    }
+    
+}
