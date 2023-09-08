@@ -12,6 +12,32 @@ body {
     ;
 }
 
+.title {
+    color: #0B0223;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.description {
+    color: #534C64;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 450px;
+
+}
+
+.color-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
 
 /* header style */
 nav {
@@ -74,6 +100,7 @@ nav li {
 
 }
 
+
 /* banner style */
 .banner {
     display: flex;
@@ -121,6 +148,7 @@ nav li {
     font-weight: 600;
     margin-right: 25px;
 }
+
 .sec-btn {
     background-color: var(--secondary-color);
     color: var(--third-color);
@@ -132,64 +160,285 @@ nav li {
     font-weight: 600;
 }
 
-/* responsive style */
-@media screen and (max-width:576px){
-    body{
+
+/* fun video section */
+.fun-video {
+    margin: 50px 0;
+    padding: 50px 250px;
+}
+
+.fun-video-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.fun-video-cart {
+    display: flex;
+    gap: 25px;
+
+
+}
+
+.cart {
+    width: 342px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 16px;
+
+}
+
+#cart-1 {
+    background: url(images/Rectangle\ 4.png), lightgray 50% / cover no-repeat;
+}
+
+#cart-2 {
+    background: url(images/Rectangle\ 5.png);
+}
+
+#cart-3 {
+    background: url(images/Rectangle\ 7.png);
+}
+
+.overlay {
+    position: absolute;
+    width: 342px;
+    height: 400px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s;
+
+}
+
+.cart:hover>.overlay {
+    background-color: rgba(0, 0, 0, 0.329);
+    border: 1px solid red;
+
+}
+
+.icon {
+    position: absolute;
+    display: none;
+    font-size: 50px;
+    width: 342px;
+    height: 400px;
+    color: #FFF;
+    transition: display 0.5s;
+    background: linear-gradient(180deg, #ff0000 25%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cart:hover>.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-4 {
+    background: url(images/Rectangle\ 6.png);
+}
+
+/* play instantly part style */
+.play {
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 240px;
+    margin-bottom:
+}
+
+.cartoon {
+    position:relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+/* game types part style */
+.game-types {
+    margin-top: 50px;
+    height: 427px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    padding-top: 100px;
+}
+
+
+.game-type-1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 250px 50px 250px;
+}
+
+.game-type-2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.games{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 317px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    
+
+}
+.games:hover{
+    border:2px solid #F948B2;
+}
+
+/* responsive mobile style */
+@media screen and (max-width:576px) {
+    body {
         max-width: 376px;
 
     }
-    nav{
+
+    nav {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 10px 50px;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         gap: 10px;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         padding: 10px 10px;
         justify-content: flex-start;
         align-items: flex-start;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .banner-img-container{
+
+    .banner-img-container {
         max-width: 300px;
         margin-bottom: 50px;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%
     }
-    nav li{
+
+    nav li {
         margin
     }
-    .banner-content{
+
+    .banner-content {
         padding-left: 20px;
     }
-    .banner-sub-title{
-        font-size:2.6em;
+
+    .banner-sub-title {
+        font-size: 2.6em;
         margin-bottom: 40px;
         padding-right: 20px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 5em;
         padding-left: 10px;
     }
-    .banner-img-container{
+
+    .banner-img-container {
         padding-left: 20px;
     }
+
     .pri-btn {
         padding: 21px 40px;
         font-size: 15px;
         margin-right: 10px;
     }
+
     .sec-btn {
         padding: 21px 40px;
         border-radius: 48px;
         font-size: 15px;
         font-weight: 600;
     }
+
+    .fun-video-cart {
+        flex-direction: column;
+        padding: 5px 0;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cart {
+        width: 300px;
+        height: 350px;
+    }
+
+    .fun-video {
+        margin-top: 50px;
+        padding: 10px 20px;
+    }
+
+    .overlay {
+        width: 300px;
+        height: 350px;
+
+    }
+    .play{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 0px 10px;
+    }
+    .play-image{
+        margin-bottom: 50px;
+        max-width:500px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 20px;
+    }
+    .play-image .cowboy{
+        width: 70%;
+        margin-left: 60px;
+
+    }
+    .cartoon{
+        width: 40%;
+        bottom: 110px;
+        left: 10px;
+        
+        
+    }
+    .description{
+        margin-top: 20px;
+        padding: 0 10px;
+        width: 400px;
+        text-align: center;
+
+    }
+    .title{
+        padding-left: 0px;
+        text-align: center;
+    }
+
+
+    .game-types {
+        margin-top: 500px;
+        height: 427px;
+        padding-top: 100px;
+    }
+    .game-type-1{
+        flex-direction: column;
+    }
+
 }
+
+/* responsive tablet layout */
+@media screen and (min-width:425px) and (max-width:768px) {}
