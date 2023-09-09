@@ -503,26 +503,26 @@ nav li {
         font-size: .6em;
     }
 
+    .footer{
+        padding: 0 10px;
+        padding-top: 20px;
+    }
+    .footer-item-1 a{
+        margin-right: 5px;
     
+    }
+    .footer-item-2 a{
+        font-size: 30px;
+        margin-right: 30px;
+    }
+    .footer-item-3 a{
+        margin-right: 5px;
+    }
 
 
 
 }
-.footer{
-    padding: 0 10px;
-    padding-top: 20px;
-}
-.footer-item-1 a{
-    margin-right: 5px;
 
-}
-.footer-item-2 a{
-    font-size: 30px;
-    margin-right: 30px;
-}
-.footer-item-3 a{
-    margin-right: 5px;
-}
 
 
 /* responsive tablet layout */
