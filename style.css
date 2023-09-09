@@ -339,22 +339,6 @@ nav li {
 /* responsive mobile style */
 @media screen and (max-width:576px) 
 {
-    .footer{
-        padding: 0 10px;
-        padding-top: 20px;
-    }
-    .footer-item-1 a{
-        margin-right: 5px;
-
-    }
-    .footer-item-2 a{
-        font-size: 30px;
-        margin-right: 30px;
-    }
-    .footer-item-3 a{
-        margin-right: 5px;
-    }
-
     
     body {
         max-width: 376px;
@@ -524,6 +508,22 @@ nav li {
 
 
 }
+.footer{
+    padding: 0 10px;
+    padding-top: 20px;
+}
+.footer-item-1 a{
+    margin-right: 5px;
+
+}
+.footer-item-2 a{
+    font-size: 30px;
+    margin-right: 30px;
+}
+.footer-item-3 a{
+    margin-right: 5px;
+}
+
 
 /* responsive tablet layout */
 @media screen and (min-width:425px) and (max-width:768px) {}
