@@ -258,7 +258,7 @@ nav li {
 }
 
 /* game types part style */
-.game-types {
+.game-type{
     margin-top: 50px;
     height: 427px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
@@ -270,33 +270,92 @@ nav li {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 10px 250px 50px 250px;
+    padding: 50px 250px;
 }
 
 .game-type-2 {
     display: flex;
     justify-content: center;
     gap: 50px;
+
 }
 
-.games{
+.game{
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
-    width: 317px;
+    width: 300px;
     height: 80px;
     border-radius: 50px;
     background: #FFF;
     
 
 }
-.games:hover{
+.game:hover{
     border:2px solid #F948B2;
+    color: #F948B2;
+}
+.game-title{
+    font-weight: bold;
+    font-size:1.3em;
+}
+
+/* footer section style  */
+
+.footer{
+    height: 636px;
+    background-color: #0B0223;
+    padding: 50px 250px;
+}
+.footer-item-1{
+    margin-top: 50px;
+}
+.footer-item-1>a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 50px;
+
+}
+.footer-item-2{
+    margin-top: 50px;
+}
+.footer-item-2>a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 45px;
+    margin-right: 50px;
+}
+.footer-item-3{
+    margin-top: 50px;
+}
+.footer-item-3>a{
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+    margin-right: 50px;
+    
 }
 
 /* responsive mobile style */
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px) 
+{
+    .footer{
+        padding: 0 10px;
+        padding-top: 20px;
+    }
+    .footer-item-1 a{
+        margin-right: 5px;
+
+    }
+    .footer-item-2 a{
+        font-size: 30px;
+        margin-right: 30px;
+    }
+    .footer-item-3 a{
+        margin-right: 5px;
+    }
+
+    
     body {
         max-width: 376px;
 
@@ -428,15 +487,41 @@ nav li {
         text-align: center;
     }
 
-
-    .game-types {
-        margin-top: 500px;
-        height: 427px;
-        padding-top: 100px;
+    .game-container{
+    }
+    .game-type{
+        padding-left: 0;
+        height: 200px;
+        padding-top: 50px;
     }
     .game-type-1{
-        flex-direction: column;
+        width: 250px;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 0 10px;
     }
+    .game-type-2{
+        gap: 5px;
+        padding: 10px 20px;
+        display: none;
+    }
+    .game{
+        width: 100px;
+        height: 50px;
+        gap: 5px;
+
+    }
+    .game>img{
+        width:30px;
+        height: 30px;
+    }
+    .game-title{
+        font-size: .6em;
+    }
+
+    
+
+
 
 }
 
